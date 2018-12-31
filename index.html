@@ -1,0 +1,90 @@
+<html>
+<head>
+	
+	<title>Online Job Recruitment System</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type = "text/css">
+	body {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+	}
+	label {
+		font-weight:bold;
+		width:100px;
+		font-size:14px;
+	}
+	.box2 {
+		border:#666666 solid 1px;
+	}
+</style>
+</head>
+
+
+<body>
+
+	
+	<div class="fixed1" style="opacity: 0.8">
+		<div class="header">
+			<input type = "button" value = "Logout" style="width: 10%;">
+			<img src="images/logo.png" align="right" width="180px">
+			<div class="t3">
+				Online Jobs
+			</div>
+		</div>
+	</div>
+
+	<table border="0" align="right" width="80%">
+		<tr>
+			<td width="50%" height="700px"></td>
+			<td width="50%" height="700px"	>
+
+				<div style = "width: 500px; border: solid 1px #333333; " align = "left">
+					<div style = " background-color:#333333; color:#FFFFFF; padding:3px;font-size: 25px;"><b>Login</b></div>
+					<div style = "margin:5px ; height: 100%	">
+						<div class="container" >
+							<form action = "controllers/login.php" method = "post">
+								<label style="font-size: 15px">UserName  :</label><br><input type = "text" name = "username" class = "box2"/><br /><br />
+								<label style="font-size: 15px">Password  :</label><br><input type = "password" name = "password" class = "box2" /><br/><br />
+								<input type = "submit" value = " Submit "/>
+								<a href="signup.php">
+									<input type = "button" value = " Signup "/><br />
+								</a>
+							</form>
+						</div>
+						<!-- <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div> -->
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+<div style="opacity: 1">
+	<div class="fixed" >		
+		<div class="leftpane"> 
+			<div class="about"><br/>
+				<div class="t1"><b> More </b></div>
+				<hr style="opacity: 1">
+				<div class="t2"><a href="../signup/Signup_form.php"> Contact us </a></div>
+				<div class="t2"><a href="../login/LOGin.php"> Help </a></div>
+			</div>
+		</div>
+
+		<div class="rightpane">
+			<div class="about"><br/>
+				<div class="t1"> Keep In Touch </div>
+				<hr style="opacity: 1"><center>
+				<a href="https://www.facebook.com/"><img src="images/facebooklogo.PNG" alt="facebook" class="logo"></a>
+				<a href="https://twitter.com/"><img src="images/tweeterlogo.PNG" alt="tweeter" class="logo"></a>
+				<a href="https://plus.google.com/discover"><img src="images/pluslogo.PNG" alt="googlePlus" class="logo"></a>
+				<a href="https://www.linkedin.com"><img src="images/linkedinlogo.PNG" alt="LinkedIn" class="logo"></a>
+				<a href="https://www.youtube.com/"><img src="images/youtubelogo.PNG" alt="youtube" class="logo"></a>
+				<a href="https://www.instagram.com/?hl=en"><img src="images/instalogo.PNG" alt="instagram" class="logo"></a>
+				</center>
+			</div>
+		</div>
+
+	</div>
+</div>
+</body>    	
+</html>
